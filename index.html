@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+		<br>
+		<!--- Create canvas --->
+		<canvas id="myCanvas" height="400" width="600"></canvas>
+		<br>
+		<!--- Create Bootstrap button --->
+		<button class="btn btn-warning btn-lg" onclick="playSound()" >Kanthi</button>
+        <br>
+		<br>
+		<button class="btn btn-warning" data-toggle="modal" data-target="#mymodal">Click me</button>
+
+		<div id="mymodal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">&times;</button>
+                  
+                </div>
+      
+              <div class="modal-body">
+                <img id="next_image" src="1.jpg" >
+                <br><br>
+				<button class="btn btn-success" onclick="next()">Next</button>
+              </div>
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
